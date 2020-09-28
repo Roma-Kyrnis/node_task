@@ -1,0 +1,32 @@
+{
+  "name": "simple-function",
+  "version": "1.0.0",
+  "description": "Task Node.js. A simply function",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roman-Kirnos/node_task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roman-Kirnos/node_task/issues"
+  },
+  "homepage": "https://github.com/Roman-Kirnos/node_task#readme",
+  "dependencies": {
+    "pino": "^6.6.1",
+    "pino-pretty": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "prettier": "^2.1.2"
+  }
+}
