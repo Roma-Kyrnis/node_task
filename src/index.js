@@ -5,7 +5,7 @@ function numSocks(array) {
   let quantity = 0;
 
   for (const iter of array) {
-    if (iter.type === 'socks') quantity += iter.quantity ? iter.quantity : 1;
+    if (iter.type === 'socks') quantity += iter.quantity ? iter.quantity : 0;
   }
 
   return quantity;
@@ -15,7 +15,7 @@ function redHats(array) {
   let quantity = 0;
 
   for (const iter of array) {
-    if (iter.type === 'hat' && iter.color === 'red') quantity += iter.quantity ? iter.quantity : 1;
+    if (iter.type === 'hat' && iter.color === 'red') quantity += iter.quantity ? iter.quantity : 0;
   }
 
   return quantity;
@@ -27,7 +27,7 @@ function goodsByColor(array) {
   let blue = 0;
 
   for (const iter of array) {
-    const quantity = iter.quantity ? iter.quantity : 1;
+    const quantity = iter.quantity ? iter.quantity : 0;
     const price = (iter.price ? iter.price : iter.priceForPair).split('$')[1];
 
     if (iter.color === 'red') red += quantity * price;
@@ -42,7 +42,7 @@ function goodsCost(array) {
   let cost = 0;
 
   for (const iter of array) {
-    const quantity = iter.quantity ? iter.quantity : 1;
+    const quantity = iter.quantity ? iter.quantity : 0;
     const price = (iter.price ? iter.price : iter.priceForPair).split('$')[1];
 
     cost += quantity * price;
